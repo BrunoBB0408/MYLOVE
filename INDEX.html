@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMOR</title>
+
+    <style> 
+    BODY{ 
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-image: linear-gradient(45DEG, rgb(250, 72, 72), rgb(131, 130, 130));
+    
+    }
+    DIV{ 
+        background-color: rgba(0, 0, 0, 0.808);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 80px;
+        border-radius: 50px;
+        color: white;
+        text-align: center;
+    }
+    input{
+        padding: 5PX;
+        outline: none;
+    }
+
+    button{ 
+        border: none;
+        padding: 4px;
+        background-color: aquamarine;
+        width: 50%;
+        border-radius: 10px;
+        cursor: pointer;
+        
+    }
+
+    
+
+    button:hover{
+        background-color: rgb(59, 188, 253);
+    }
+
+    
+    </style>
+</head>
+<body>
+    <DIV>
+    <H1> LOGIN </H1> 
+    <input type="text" placeholder="LOGIN" id="login">
+    <BR><BR>
+    <input type="password" placeholder="SENHA" id="senha">
+    <BR> <BR>
+    <input type="submit" onclick="LOGAR(); return false">
+     
+
+    <script>
+
+        function LOGAR(){
+
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+
+
+        if(login == "COSTAAZUL" && senha == "AMOR")
+        {
+             alert('sucesso')
+             location.href = "HOME.html";
+        }else{ 
+            alert ('usuario ou senha incorretos');
+        }
+        
+    }
+
+    </script>
+
+
+    </DIV>
+    
+</body>
+</html>
